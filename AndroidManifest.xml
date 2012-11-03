@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.kataplop.android.gaggle.beta"
-    android:versionCode="20121026"
-    android:versionName="2.0beta20121026-1" >
+    android:versionCode="20121103"
+    android:versionName="2.0beta20121103-1" >
 
     <supports-screens
         android:anyDensity="true"
@@ -12,6 +12,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="15" />
+    <uses-permission android:name="mobibalises.BROADCAST"/>
 
     <application
         android:name="com.geeksville.gaggle.GaggleApplication"
