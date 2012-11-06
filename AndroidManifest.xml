@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.kataplop.android.gaggle.beta"
-    android:versionCode="20121103"
-    android:versionName="2.0beta20121103-1" >
+    android:versionCode="20121106"
+    android:versionName="2.0beta20121106-1" >
 
     <supports-screens
         android:anyDensity="true"
