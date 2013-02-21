@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.kataplop.android.gaggle.beta"
-    android:versionCode="20121202"
-    android:versionName="2.0beta20121202-1" >
+    android:versionCode="20121228"
+    android:versionName="2.0beta20121228-1" >
 
     <supports-screens
         android:anyDensity="true"
@@ -12,7 +12,19 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="15" />
+
     <uses-permission android:name="mobibalises.BROADCAST"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
 
     <application
         android:name="com.geeksville.gaggle.GaggleApplication"
@@ -31,7 +43,7 @@
             android:name="com.geeksville.info.SelectInfoFieldsActivity"
             android:label="Select fields" >
         </activity>
-        <activity android:name="com.geeksville.gaggle.TopActivity" >
+        <activity android:name="com.geeksville.gaggle.TopActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,21 +55,10 @@
                 <category android:name="android.intent.category.PREFERENCE" />
             </intent-filter>
         </activity>
-        <activity android:name="com.geeksville.gaggle.FlyMapActivity" >
+        <activity android:name="com.geeksville.gaggle.FlyMapActivity" android:screenOrientation="portrait">
         </activity>
     </application>
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="com.android.vending.BILLING" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.BLUETOOTH" />
+
 
 </manifest>
